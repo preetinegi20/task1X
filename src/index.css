@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  --navyBlue: #040f2e;
+  --alice: #fcfcfc;
+  font-family: "SUSE", sans-serif;
+  --skyBlue: #3e5fb9;
+  --grey: #a6a6a6e7;
+  --footerbg: #1824458d;
+}
+.main-container {
+  background-color: var(--navyBlue);
+  color: var(--alice);
+  width: 100%;
+  margin: auto;
+  height: 7rem;
+}
+a {
+  color: var(--alice);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.main-container .listItems {
+  display: flex;
+  padding: 2%;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.main-container .listItems .logo {
+  width: 4rem;
+}
+.main-container .listItems a {
+  font-size: 1.3rem;
+}
+.main-container .listItems .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-container .listItems nav .links {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+}
+.main-container .listItems nav .links a {
+  margin-left: 3rem;
+}
+.main-container .listItems nav .contact {
+  align-items: center;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.main-container .listItems nav .contact button {
+  cursor: pointer;
+  width: 8rem;
+  border: #000;
+  border-radius: 10px;
+  height: 4rem;
+  background-color: var(--skyBlue);
+  color: var(--alice);
+  font-size: 1.4rem;
+}
+.footer-container {
+  color: val(--alice);
+  background-color: var(--footerbg);
+}
+.footer-container .top-Container {
+  display: flex;
+  width: 88%;
+  margin: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-container .top-Container :first-child {
+}
+.footer-container .top-Container > div {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem;
+}
+.footer-container .top-Container h3 {
+  margin-bottom: 2rem;
+}
+.footer-container .top-Container .box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-container .top-Container .box a {
+  color: var(--alice);
+  margin: 0.5rem 0rem;
+}
+.slider-container .slider {
+  position: relative;
+}
+.slider-container .slider .active {
+  width: 100%;
+  height: 35rem;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+.slider-container .slider .none {
+  display: none;
+}
+.slider-container .slider .active .contents {
+  position: absolute;
+  top: 0rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  background-color: #84a2f563;
+  width: 30rem;
+  justify-content: space-between;
+  color: var(--alice);
+}
+button {
+  outline: none;
+  border: 0px;
+  cursor: pointer;
+}
+.slider-container .slider button {
+  background-color: var(--skyBlue);
+  color: var(--alice);
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+.slider-container .slider .slider-button h4:first-child {
+  left: 4rem;
+  font-size: 3rem;
+}
+.slider-container .slider .slider-button h4:last-child {
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+}
+.slider-container .slider .slider-button h4 {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2rem;
+  font-size: 3rem;
+}
+.property-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+}
+.property-container .mainContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0rem;
+  margin: auto;
+}
+.property-container .mainContainer :first-child {
+  font-size: 3rem;
+}
+.property-container .topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.property-container .topContainer .container {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--grey);
+  height: 20rem;
+}
+.property-container .topContainer .container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 7rem;
+}
+.property-container .topContainer .container button {
+  width: 5rem;
+  color: var(--alice);
+  background-color: var(--skyBlue);
+  height: 2rem;
+  border-radius: 10px;
+}
+input {
+  outline: 1px solid var(--grey);
+  outline: 0px;
+  padding: 0.4rem;
+}
+.form-container form {
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  height: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-container form :nth-child(1) {
+  width: 60%;
+}
+.form-container form button {
+  background-color: var(--skyBlue);
+  color: var(--alice);
+  border-radius: 10px;
+  width: 5rem;
+  font-size: 1rem;
+}
+.form-container form select {
+  width: 8%;
+}
+.random {
+  color: #3e5fb9;
+  padding: 10rem 2rem;
+  background-color: #3e5fb92d;
+}
+.hem {
+  display: none;
+}
+.hem span {
+  background-color: aliceblue;
+  height: 0.3rem;
+  width: 2rem;
+  margin: 0.3rem;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .main-container {
+    width: 100%;
+  }
+  .main-container .listItems .nav {
+    display: none;
+  }
+  .hem {
+    display: block;
+  }
+  .slider-container .slider .active .contents {
+    padding: 1rem 0 1rem 1rem;
+    width: 70%;
+  }
+  .property-container .mainContainer {
+    width: 100%;
+  }
+  .property-container .topContainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .property-container .topContainer .container {
+    width: 100%;
+    margin: 1rem 0rem;
+    height: 25rem;
+    padding: 1rem;
+  }
+  .property-container .topContainer .container img {
+    height: 14rem;
+  }
+}
